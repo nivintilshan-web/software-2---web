@@ -1,17 +1,194 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Web Tasks</title>
+    <title>Web Development Tasks</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background-color: #f8f9fa;
+        }
+        h1 { 
+            color: #2c3e50; 
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .module { 
+            background: white; 
+            padding: 20px; 
+            margin: 20px 0; 
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-left: 5px solid #3498db;
+        }
+        .module h2 { 
+            margin-top: 0; 
+            color: #2980b9; 
+            font-size: 1.5em;
+        }
+        .task-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .task-item {
+            background: #ecf0f1;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #bdc3c7;
+        }
+        .task-item a {
+            color: #2c3e50;
+            text-decoration: none;
+            display: block;
+        }
+        .task-item a:hover {
+            color: #3498db;
+            text-decoration: underline;
+        }
+        .file-info {
+            font-size: 0.8em;
+            color: #7f8c8d;
+            margin-top: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
-    <h1>Web Development Tasks</h1>
-    <ul>
-        <li><a href="module4/task1/t1.html">Module 4 Task 1</a></li>
-        <li><a href="module4/task2/t2.html">Module 4 Task 2</a></li>
-        <li><a href="module4/task3/t3.html">Module 4 Task 3</a></li>
-        <li><a href="module4/task4/t4.html">Module 4 Task 4</a></li>
-        <li><a href="module4/task5/t5.html">Module 4 Task 5</a></li>
-        <li><a href="module4/task6/t6.html">Module 4 Task 6</a></li>
-    </ul>
+    <h1>Web Development Tasks Portfolio</h1>
+    
+    <div class="module">
+        <h2>Module 1</h2>
+        <div class="task-grid">
+            <div class="task-item">
+                <a href="module1/task1/t1.html">Task 1</a>
+                <div class="file-info">t1.html, t1.js</div>
+            </div>
+            <div class="task-item">
+                <a href="module1/task2/t2.html">Task 2</a>
+                <div class="file-info">t2.html, t2.js</div>
+            </div>
+            <div class="task-item">
+                <a href="module1/task3/t3.html">Task 3</a>
+                <div class="file-info">t3.html, t3.js</div>
+            </div>
+            <div class="task-item">
+                <a href="module1/task4/t4.html">Task 4</a>
+                <div class="file-info">t4.html, t4.js</div>
+            </div>
+            <div class="task-item">
+                <a href="module1/task5/t5.html">Task 5</a>
+                <div class="file-info">t5.html, t5.js</div>
+            </div>
+            <div class="task-item">
+                <a href="module1/task7/t7.html">Task 7</a>
+                <div class="file-info">t7.html, t7.js</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="module">
+        <h2>Module 2</h2>
+        <div class="task-grid">
+            <div class="task-item">
+                <a href="module2/task1/t1.html">Task 1</a>
+                <div class="file-info">t1.html, t1.js</div>
+            </div>
+            <div class="task-item">
+                <a href="module2/task2/t2.html">Task 2</a>
+                <div class="file-info">t2.html, t2.js</div>
+            </div>
+            <div class="task-item">
+                <a href="module2/task3/t3.html">Task 3</a>
+                <div class="file-info">t3.html, t3.js</div>
+            </div>
+            <div class="task-item">
+                <a href="module2/task4/t4.html">Task 4</a>
+                <div class="file-info">t4.html, t4.js</div>
+            </div>
+            <div class="task-item">
+                <a href="module2/task5/t5.html">Task 5</a>
+                <div class="file-info">t5.html, t5.js</div>
+            </div>
+            <div class="task-item">
+                <a href="module2/task6/t6.html">Task 6</a>
+                <div class="file-info">t6.html, t6.js</div>
+            </div>
+            <div class="task-item">
+                <a href="module2/task7/t7.html">Task 7</a>
+                <div class="file-info">t7.html, t7.js</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="module">
+        <h2>Module 3</h2>
+        <div class="task-grid">
+            <div class="task-item">
+                <a href="module3/task1/1.html">Task 1</a>
+                <div class="file-info">1.html, 1.css, 1.js</div>
+            </div>
+            <div class="task-item">
+                <a href="module3/task2/2.html">Task 2</a>
+                <div class="file-info">2.html, 2.css, 2.js</div>
+            </div>
+            <div class="task-item">
+                <a href="module3/task3/3.html">Task 3</a>
+                <div class="file-info">3.html, 3.js</div>
+            </div>
+            <div class="task-item">
+                <a href="module3/task4/4.html">Task 4</a>
+                <div class="file-info">4.html, 4.js</div>
+            </div>
+            <div class="task-item">
+                <a href="module3/task10/10.html">Task 10</a>
+                <div class="file-info">10.html, 10.js</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="module">
+        <h2>Module 4</h2>
+        <div class="task-grid">
+            <div class="task-item">
+                <a href="module4/task1/t1.html">Task 1</a>
+                <div class="file-info">t1.html, t1.js</div>
+            </div>
+            <div class="task-item">
+                <a href="module4/task2/t2.html">Task 2</a>
+                <div class="file-info">t2.html, t2.js</div>
+            </div>
+            <div class="task-item">
+                <a href="module4/task3/t3.html">Task 3</a>
+                <div class="file-info">t3.html, t3.js</div>
+            </div>
+            <div class="task-item">
+                <a href="module4/task4/t4.html">Task 4</a>
+                <div class="file-info">t4.html, t4.js</div>
+            </div>
+            <div class="task-item">
+                <a href="module4/task5/t5.html">Task 5</a>
+                <div class="file-info">t5.html, t5.js</div>
+            </div>
+            <div class="task-item">
+                <a href="module4/task6/t6.html">Task 6</a>
+                <div class="file-info">t6.html, t6.js</div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Total: 25+ Web Development Tasks | Hosted on GitHub Pages</p>
+        <p>Repository: <a href="https://github.com/nivintilshan-web/software-2---web">github.com/nivintilshan-web/software-2---web</a></p>
+    </footer>
 </body>
 </html>
