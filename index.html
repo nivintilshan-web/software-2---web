@@ -9,57 +9,95 @@
             margin: 0 auto; 
             padding: 20px; 
             background-color: #f8f9fa;
+            line-height: 1.6;
         }
         h1 { 
             color: #2c3e50; 
             text-align: center;
             border-bottom: 3px solid #3498db;
-            padding-bottom: 10px;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
         }
         .module { 
             background: white; 
-            padding: 20px; 
-            margin: 20px 0; 
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            border-left: 5px solid #3498db;
+            padding: 25px; 
+            margin: 25px 0; 
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+            border-left: 6px solid #3498db;
         }
         .module h2 { 
             margin-top: 0; 
             color: #2980b9; 
-            font-size: 1.5em;
+            font-size: 1.6em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ecf0f1;
         }
-        .task-grid {
+        .task-list {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-            gap: 10px;
-            margin-top: 15px;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
         }
         .task-item {
-            background: #ecf0f1;
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid #bdc3c7;
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e1e8ed;
+            transition: all 0.3s ease;
+        }
+        .task-item:hover {
+            background: #e3f2fd;
+            border-color: #3498db;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.1);
         }
         .task-item a {
             color: #2c3e50;
             text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
             display: block;
+            margin-bottom: 8px;
         }
         .task-item a:hover {
             color: #3498db;
-            text-decoration: underline;
         }
-        .file-info {
-            font-size: 0.8em;
+        .files {
+            font-size: 0.85em;
             color: #7f8c8d;
-            margin-top: 5px;
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px dashed #ddd;
+        }
+        .file-icon {
+            color: #3498db;
+            margin-right: 5px;
+        }
+        .module-count {
+            background: #3498db;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            margin-left: 10px;
         }
         footer {
             text-align: center;
-            margin-top: 30px;
+            margin-top: 40px;
             color: #7f8c8d;
             font-size: 0.9em;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .total-tasks {
+            background: #2c3e50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 20px auto;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -67,128 +105,133 @@
     <h1>Web Development Tasks Portfolio</h1>
     
     <div class="module">
-        <h2>Module 1</h2>
-        <div class="task-grid">
+        <h2>Module 1 <span class="module-count">6 tasks</span></h2>
+        <div class="task-list">
             <div class="task-item">
-                <a href="module1/task1/t1.html">Task 1</a>
-                <div class="file-info">t1.html, t1.js</div>
+                <a href="Module 1/Task 1/t1.html">Task 1: Console Output</a>
+                <div class="files">📄 t1.html | 📜 t1.js</div>
             </div>
             <div class="task-item">
-                <a href="module1/task2/t2.html">Task 2</a>
-                <div class="file-info">t2.html, t2.js</div>
+                <a href="Module 1/Task 2/t2.html">Task 2: User Greeting</a>
+                <div class="files">📄 t2.html | 📜 t2.js</div>
             </div>
             <div class="task-item">
-                <a href="module1/task3/t3.html">Task 3</a>
-                <div class="file-info">t3.html, t3.js</div>
+                <a href="Module 1/Task 3/t3.html">Task 3: Sum, Product, Average</a>
+                <div class="files">📄 t3.html | 📜 t3.js</div>
             </div>
             <div class="task-item">
-                <a href="module1/task4/t4.html">Task 4</a>
-                <div class="file-info">t4.html, t4.js</div>
+                <a href="Module 1/Task 4/t4.html">Task 4</a>
+                <div class="files">📄 t4.html | 📜 t4.js</div>
             </div>
             <div class="task-item">
-                <a href="module1/task5/t5.html">Task 5</a>
-                <div class="file-info">t5.html, t5.js</div>
+                <a href="Module 1/Task 5/t5.html">Task 5</a>
+                <div class="files">📄 t5.html | 📜 t5.js</div>
             </div>
             <div class="task-item">
-                <a href="module1/task7/t7.html">Task 7</a>
-                <div class="file-info">t7.html, t7.js</div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="module">
-        <h2>Module 2</h2>
-        <div class="task-grid">
-            <div class="task-item">
-                <a href="module2/task1/t1.html">Task 1</a>
-                <div class="file-info">t1.html, t1.js</div>
-            </div>
-            <div class="task-item">
-                <a href="module2/task2/t2.html">Task 2</a>
-                <div class="file-info">t2.html, t2.js</div>
-            </div>
-            <div class="task-item">
-                <a href="module2/task3/t3.html">Task 3</a>
-                <div class="file-info">t3.html, t3.js</div>
-            </div>
-            <div class="task-item">
-                <a href="module2/task4/t4.html">Task 4</a>
-                <div class="file-info">t4.html, t4.js</div>
-            </div>
-            <div class="task-item">
-                <a href="module2/task5/t5.html">Task 5</a>
-                <div class="file-info">t5.html, t5.js</div>
-            </div>
-            <div class="task-item">
-                <a href="module2/task6/t6.html">Task 6</a>
-                <div class="file-info">t6.html, t6.js</div>
-            </div>
-            <div class="task-item">
-                <a href="module2/task7/t7.html">Task 7</a>
-                <div class="file-info">t7.html, t7.js</div>
+                <a href="Module 1/Task 7/t7.html">Task 7</a>
+                <div class="files">📄 t7.html | 📜 t7.js</div>
             </div>
         </div>
     </div>
     
     <div class="module">
-        <h2>Module 3</h2>
-        <div class="task-grid">
+        <h2>Module 2 <span class="module-count">7 tasks</span></h2>
+        <div class="task-list">
             <div class="task-item">
-                <a href="module3/task1/1.html">Task 1</a>
-                <div class="file-info">1.html, 1.css, 1.js</div>
+                <a href="Module 2/Task 1/t1.html">Task 1</a>
+                <div class="files">📄 t1.html | 📜 t1.js</div>
             </div>
             <div class="task-item">
-                <a href="module3/task2/2.html">Task 2</a>
-                <div class="file-info">2.html, 2.css, 2.js</div>
+                <a href="Module 2/Task 2/t2.html">Task 2</a>
+                <div class="files">📄 t2.html | 📜 t2.js</div>
             </div>
             <div class="task-item">
-                <a href="module3/task3/3.html">Task 3</a>
-                <div class="file-info">3.html, 3.js</div>
+                <a href="Module 2/Task 3/t3.html">Task 3</a>
+                <div class="files">📄 t3.html | 📜 t3.js</div>
             </div>
             <div class="task-item">
-                <a href="module3/task4/4.html">Task 4</a>
-                <div class="file-info">4.html, 4.js</div>
+                <a href="Module 2/Task 4/t4.html">Task 4</a>
+                <div class="files">📄 t4.html | 📜 t4.js</div>
             </div>
             <div class="task-item">
-                <a href="module3/task10/10.html">Task 10</a>
-                <div class="file-info">10.html, 10.js</div>
+                <a href="Module 2/Task 5/t5.html">Task 5</a>
+                <div class="files">📄 t5.html | 📜 t5.js</div>
+            </div>
+            <div class="task-item">
+                <a href="Module 2/Task 6/t6.html">Task 6</a>
+                <div class="files">📄 t6.html | 📜 t6.js</div>
+            </div>
+            <div class="task-item">
+                <a href="Module 2/Task 7/t7.html">Task 7</a>
+                <div class="files">📄 t7.html | 📜 t7.js</div>
             </div>
         </div>
     </div>
     
     <div class="module">
-        <h2>Module 4</h2>
-        <div class="task-grid">
+        <h2>Module 3 <span class="module-count">5 tasks</span></h2>
+        <div class="task-list">
             <div class="task-item">
-                <a href="module4/task1/t1.html">Task 1</a>
-                <div class="file-info">t1.html, t1.js</div>
+                <a href="Module 3/Task 1/1.html">Task 1: InnerHTML List</a>
+                <div class="files">📄 1.html | 🎨 1.css | 📜 1.js</div>
             </div>
             <div class="task-item">
-                <a href="module4/task2/t2.html">Task 2</a>
-                <div class="file-info">t2.html, t2.js</div>
+                <a href="Module 3/Task 2/2.html">Task 2</a>
+                <div class="files">📄 2.html | 🎨 2.css | 📜 2.js</div>
             </div>
             <div class="task-item">
-                <a href="module4/task3/t3.html">Task 3</a>
-                <div class="file-info">t3.html, t3.js</div>
+                <a href="Module 3/Task 3/3.html">Task 3: Dynamic List</a>
+                <div class="files">📄 3.html | 📜 3.js</div>
             </div>
             <div class="task-item">
-                <a href="module4/task4/t4.html">Task 4</a>
-                <div class="file-info">t4.html, t4.js</div>
+                <a href="Module 3/Task 4/4.html">Task 4: CreateElement Options</a>
+                <div class="files">📄 4.html | 📜 4.js</div>
             </div>
             <div class="task-item">
-                <a href="module4/task5/t5.html">Task 5</a>
-                <div class="file-info">t5.html, t5.js</div>
-            </div>
-            <div class="task-item">
-                <a href="module4/task6/t6.html">Task 6</a>
-                <div class="file-info">t6.html, t6.js</div>
+                <a href="Module 3/Task 10/10.html">Task 10: Form Handling</a>
+                <div class="files">📄 10.html | 📜 10.js</div>
             </div>
         </div>
+    </div>
+    
+    <div class="module">
+        <h2>Module 4 <span class="module-count">6 tasks</span></h2>
+        <div class="task-list">
+            <div class="task-item">
+                <a href="Module 4/Task 1/t1.html">Task 1: TV Series Search</a>
+                <div class="files">📄 t1.html | 📜 t1.js</div>
+            </div>
+            <div class="task-item">
+                <a href="Module 4/Task 2/t2.html">Task 2: TV Series Search Improved</a>
+                <div class="files">📄 t2.html | 📜 t2.js</div>
+            </div>
+            <div class="task-item">
+                <a href="Module 4/Task 3/t3.html">Task 3: TV Series Display</a>
+                <div class="files">📄 t3.html | 📜 t3.js</div>
+            </div>
+            <div class="task-item">
+                <a href="Module 4/Task 4/t4.html">Task 4: TV Series with Default Images</a>
+                <div class="files">📄 t4.html | 📜 t4.js</div>
+            </div>
+            <div class="task-item">
+                <a href="Module 4/Task 5/t5.html">Task 5: Chuck Norris Joke</a>
+                <div class="files">📄 t5.html | 📜 t5.js</div>
+            </div>
+            <div class="task-item">
+                <a href="Module 4/Task 6/t6.html">Task 6: Chuck Norris Jokes Search</a>
+                <div class="files">📄 t6.html | 📜 t6.js</div>
+            </div>
+        </div>
+    </div>
+    
+    <div style="text-align: center;">
+        <div class="total-tasks">Total: 24 Tasks Completed</div>
     </div>
     
     <footer>
-        <p>Total: 25+ Web Development Tasks | Hosted on GitHub Pages</p>
-        <p>Repository: <a href="https://github.com/nivintilshan-web/software-2---web">github.com/nivintilshan-web/software-2---web</a></p>
+        <p>Web Development Course Portfolio | Hosted on GitHub Pages</p>
+        <p>Repository: <a href="https://github.com/nivintilshan-web/software-2---web" style="color: #3498db;">github.com/nivintilshan-web/software-2---web</a></p>
+        <p>© 2024 | All tasks completed as part of web development course</p>
     </footer>
 </body>
 </html>
